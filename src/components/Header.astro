@@ -1,16 +1,16 @@
 ---
 import DogHeaderIcon from "../icons/DogHeaderIcon.astro";
 import PawIcon from "../icons/PawIcon.astro";
+import WavesWhite1 from "../icons/WavesWhite1.astro";
+import WavesBlue1 from "../icons/WavesBlue1.astro";
 ---
 
-<section
-  class="flex h-full relative aspect-[900/600] bg-no-repeat bg-center bg-cover w-full bg-[url('/waves1.svg')]"
->
+<section class="pb-16 md:pb-52 flex max-h-max relative w-full bg-semibrown">
   <div
-    class="flex flex-col mx-10 items-center md:items-start md:w-[630px] md:my-6 md:mx-10"
+    class="z-10 flex flex-col mx-10 items-center md:items-start md:w-[630px] md:my-6 md:mx-10"
   >
     <h1 class="text-6xl mt-5 md:text-8xl font-['Bitcheese']">
-      Ecuentra a tu amigo peludo
+      Encuentra a tu amigo peludo
     </h1>
     <h2 class="text-4xl mt-5 md:text-5xl font-['Bitcheese']">
       Adopta a un animal del refugio
@@ -28,7 +28,9 @@ import PawIcon from "../icons/PawIcon.astro";
       >
     </div>
   </div>
-  <DogHeaderIcon class="md:visible md:w-[626px] md:h-[424px] collapse" />
+  <DogHeaderIcon
+    class="md:visible md:w-[526px] md:pl-28 md:h-[424px] collapse"
+  />
 
   <PawIcon
     class="absolute right-3 top-20 size-9 md:top-[65%] md:left-[25%] rotate-[35deg] md:size-24"
@@ -42,4 +44,13 @@ import PawIcon from "../icons/PawIcon.astro";
   <PawIcon
     class="absolute right-24 top-36 size-9 md:top-[48%] md:left-[50%] rotate-[35deg] md:size-24"
   />
+
+  <WavesWhite1 class="absolute bottom-0 w-full h-fit md:bottom-0" />
+  <WavesBlue1 class="absolute bottom-0 w-full h-fit md:bottom-0" />
+  <!-- <BlankWave -->
+  <!--   class="absolute w-[100%] size-full md:pt-48 md:size-full md:bottom-0" -->
+  <!-- /> -->
+  <!-- <BlueWave -->
+  <!--   class="absolute w-[100%] size-full md:pt-24 md:size-full md:bottom-0" -->
+  <!-- /> -->
 </section>
