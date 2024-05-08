@@ -18,6 +18,7 @@ export default {
       bermuda: "#78dcca",
       primary: "#02B0EF",
       semibrown: "#FDF8EC",
+      celeste: "#B6EAFF",
     },
     extend: {},
   },
