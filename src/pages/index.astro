@@ -2,28 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Nosotros from "../components/Nosotros.astro";
+import AnimalCard from "@/components/AnimalCard.astro";
 ---
 
 <Layout title="Amigos con cola || Consigue un nuevo amigo peludo">
   <main>
     <Header />
     <Nosotros />
-    <section class="w-full bg-semibrown h-screen">
+    <section id="animales" class="w-full bg-semibrown h-screen">
       <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
         Buscando un nuevo hogar
       </h2>
-      <div
-        class="rounded-[20px] w-72 h-[30rem] bg-white flex flex-col items-center"
-      >
-        <img
-          class="rounded-full size-16"
-          src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
-        <h2>Hola</h2>
-        <div></div>
-        <button></button>
-      </div>
+      <AnimalCard />
     </section>
   </main>
 </Layout>

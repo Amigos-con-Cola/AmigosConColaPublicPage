@@ -4,7 +4,9 @@ import PawIcon from "../icons/PawIcon.astro";
 import Waves1 from "../shapes/Waves1.astro";
 ---
 
-<section class="pb-16 md:pb-52 flex max-h-max relative w-full bg-semibrown">
+<section
+  class="pt-16 pb-24 md:pb-52 flex max-h-max relative w-full bg-semibrown"
+>
   <div
     class="z-10 flex flex-col mx-10 items-center md:items-start md:w-[630px] md:my-6 md:mx-10"
   >
@@ -20,11 +22,13 @@ import Waves1 from "../shapes/Waves1.astro";
       podemos transformar vidas.
     </p>
     <div>
-      <button
-        type="button"
-        class="mt-5 text-white bg-gradient-to-r from-primary to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-        >Animales disponibles</button
-      >
+      <a href="#animales">
+        <button
+          type="button"
+          class="mt-5 text-white bg-gradient-to-r from-primary to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >Animales disponibles</button
+        >
+      </a>
     </div>
   </div>
   <DogHeaderIcon
@@ -32,16 +36,16 @@ import Waves1 from "../shapes/Waves1.astro";
   />
 
   <PawIcon
-    class="absolute right-3 top-20 size-9 md:top-[65%] md:left-[25%] rotate-[35deg] md:size-24"
+    class="absolute right-2 top-[10rem] size-9 md:top-[65%] md:left-[25%] rotate-[35deg] md:size-24"
   />
   <PawIcon
-    class="absolute right-16 top-24 size-9 md:top-[70%] md:left-[40%] rotate-[35deg] md:size-24"
+    class="absolute right-16 top-48 size-9 md:top-[70%] md:left-[40%] rotate-[35deg] md:size-24"
   />
   <PawIcon
-    class="absolute right-8 top-36 size-9 md:top-[50%] md:left-[35%] rotate-[35deg] md:size-24"
+    class="absolute right-8 top-[15.5rem] size-9 md:top-[50%] md:left-[35%] rotate-[35deg] md:size-24"
   />
   <PawIcon
-    class="absolute right-24 top-36 size-9 md:top-[48%] md:left-[50%] rotate-[35deg] md:size-24"
+    class="absolute right-28 top-[16rem] size-9 md:top-[48%] md:left-[50%] rotate-[35deg] md:size-24"
   />
 
   <Waves1 class="absolute -bottom-1 w-full h-fit" />
