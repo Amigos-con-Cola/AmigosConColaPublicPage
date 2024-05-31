@@ -3,17 +3,34 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Nosotros from "../components/Nosotros.astro";
 import AnimalCard from "@/components/AnimalCard.astro";
+import Carousel from "@/components/Carousel.tsx";
 ---
 
 <Layout title="Amigos con cola || Consigue un nuevo amigo peludo">
   <main>
     <Header />
     <Nosotros />
-    <section id="animales" class="w-full bg-semibrown h-screen">
+    <section
+      id="animales"
+      class="flex flex-col gap-5 pt-20 w-full bg-semibrown h-max pb-32"
+    >
       <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
         Buscando un nuevo hogar
       </h2>
-      <AnimalCard />
+      <Carousel client:visible />
     </section>
   </main>
 </Layout>
+
+<style>
+  .swipe {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+  }
+</style>

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Max",
+    "edad": 3,
+    "genero": "Macho",
+    "imagen": "https://random.dog/66437be1-7b0c-437d-a433-3fdc0b947ec7.jpg",
+    "estado": true,
+    "tipo": "Perro"
+  },
+  {
+    "id": 2,
+    "nombre": "Bella",
+    "edad": 5,
+    "genero": "Hembra",
+    "imagen": "https://random.dog/52e98425-4500-47c5-9472-4c63320bf496.jpg",
+    "estado": false,
+    "tipo": "Perro"
+  },
+  {
+    "id": 3,
+    "nombre": "Rocky",
+    "edad": 2,
+    "genero": "Macho",
+    "imagen": "https://random.dog/2539bc07-5097-4409-a4fa-6f8e885c42ad.jpg",
+    "estado": true,
+    "tipo": "Perro"
+  },
+  {
+    "id": 4,
+    "nombre": "Charlie",
+    "edad": 4,
+    "genero": "Macho",
+    "imagen": "https://random.dog/11fe1455-43a4-4cc1-b0a1-51bd025f5a8e.jpg",
+    "estado": true,
+    "tipo": "Perro"
+  },
+  {
+    "id": 5,
+    "nombre": "Daisy",
+    "edad": 6,
+    "genero": "Hembra",
+    "imagen": "https://random.dog/b1e63fd1-1136-4aec-8b21-3d6e60d6134f.jpg",
+    "estado": false,
+    "tipo": "Perro"
+  },
+  {
+    "id": 6,
+    "nombre": "Milo",
+    "edad": 4,
+    "genero": "Macho",
+    "imagen": "https://cdn.shibe.online/cats/65c1947db3c5e76dcdea95b0ea226ae9d5587464.jpg",
+    "estado": true,
+    "tipo": "Gato"
+  },
+  {
+    "id": 7,
+    "nombre": "Luna",
+    "edad": 6,
+    "genero": "Hembra",
+    "imagen": "https://cdn.shibe.online/cats/701fd8ab8ea7809755d7833f476f0c9f9685091e.jpg",
+    "estado": false,
+    "tipo": "Gato"
+  },
+  {
+    "id": 8,
+    "nombre": "Simba",
+    "edad": 1,
+    "genero": "Macho",
+    "imagen": "https://cdn.shibe.online/cats/7156fec24739745cd114ef95cada47a68d1c5aa5.jpg",
+    "estado": true,
+    "tipo": "Gato"
+  },
+  {
+    "id": 9,
+    "nombre": "Chloe",
+    "edad": 3,
+    "genero": "Hembra",
+    "imagen": "https://cdn.shibe.online/cats/0545605632b011eba3834fd8ab57a86a1bf265ec.jpg",
+    "estado": true,
+    "tipo": "Gato"
+  },
+  {
+    "id": 10,
+    "nombre": "Oliver",
+    "edad": 2,
+    "genero": "Macho",
+    "imagen": "https://cdn.shibe.online/cats/7587d7dd23b97f7078e2cd7ca62ca30a5f39be42.jpg",
+    "estado": false,
+    "tipo": "Gato"
+  }
+]
