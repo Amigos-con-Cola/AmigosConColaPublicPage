@@ -3,23 +3,19 @@ import DogHeaderIcon from "../icons/DogHeaderIcon.astro";
 import PawIcon from "../icons/PawIcon.astro";
 import Waves1 from "../shapes/Waves1.astro";
 ---
-
-<section
-  class="pt-16 pb-24 md:pb-52 flex max-h-max relative w-full bg-semibrown"
+<div class="bg-semibrown flex justify-center mx-0  relative">
+  <section
+  class="pt-16 container  pb-24 md:pb-52 flex justify-between items-center relative w-full   "
 >
-  <div
-    class="z-10 flex flex-col mx-10 items-center md:items-start md:w-[630px] md:my-6 md:mx-10"
-  >
-    <h1 class="text-6xl mt-5 md:text-8xl font-['Bitcheese']">
+  <div class="z-10 flex flex-col mx-10 max-h-min items-start md:my-6 md:mx-10">
+    <h1 class="text-6xl mt-5 text-pretty md:text-8xl font-['Bitcheese']">
       Encuentra a tu amigo peludo
     </h1>
-    <h2 class="text-4xl mt-5 md:text-5xl font-['Bitcheese']">
+    <h2 class="text-4xl mt-5 md:text-4xl font-['Bitcheese']">
       Adopta a un animal del refugio
     </h2>
-    <p class="mt-5">
+    <p class="text-xl mt-5">
       Ayúdanos a brindar una segunda oportunidad a los animales necesitados.
-      Puedes hacer la diferencia adoptando, donando o siendo voluntario. Juntos,
-      podemos transformar vidas.
     </p>
     <div>
       <a href="#animales">
@@ -31,9 +27,7 @@ import Waves1 from "../shapes/Waves1.astro";
       </a>
     </div>
   </div>
-  <DogHeaderIcon
-    class="md:visible md:w-[526px] md:pl-28 md:h-[424px] collapse"
-  />
+  <DogHeaderIcon class="md:visible  w-[60rem] h-[30rem] collapse" />
 
   <PawIcon
     class="absolute right-2 top-[10rem] size-9 md:top-[65%] md:left-[25%] rotate-[35deg] md:size-24"
@@ -48,5 +42,8 @@ import Waves1 from "../shapes/Waves1.astro";
     class="absolute right-28 top-[16rem] size-9 md:top-[48%] md:left-[50%] rotate-[35deg] md:size-24"
   />
 
-  <Waves1 class="absolute -bottom-1 w-full h-fit" />
+
 </section>
+<Waves1 class="z-10 absolute -bottom-1 w-full h-fit" />
+</div>
+

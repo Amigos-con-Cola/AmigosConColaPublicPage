@@ -7,18 +7,21 @@ import Carousel from "@/components/Carousel.tsx";
 ---
 
 <Layout title="Amigos con cola || Consigue un nuevo amigo peludo">
-  <main>
+  <main >
     <Header />
     <Nosotros />
-    <section
+    <div class="bg-semibrown flex justify-center">
+      <section
       id="animales"
-      class="flex flex-col gap-5 pt-20 w-full bg-semibrown h-max pb-32"
+      class="flex container flex-col gap-5 pt-20 w-full  h-max pb-32"
     >
       <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
         Buscando un nuevo hogar
       </h2>
       <Carousel client:visible />
     </section>
+    </div>
+
   </main>
 </Layout>
 
