@@ -4,24 +4,27 @@ import Header from "../components/Header.astro";
 import Nosotros from "../components/Nosotros.astro";
 import AnimalCard from "@/components/AnimalCard.astro";
 import Carousel from "@/components/Carousel.tsx";
+import Waves3 from "@/shapes/Waves3.astro";
 ---
 
 <Layout title="Amigos con cola || Consigue un nuevo amigo peludo">
-  <main >
+  <main>
     <Header />
     <Nosotros />
-    <div class="bg-semibrown flex justify-center">
+    <div class="bg-semibrown relative flex justify-center">
+      <Waves3
+        class="text-semibrown z-10 absolute -top-16 w-full md:-top-40 lg:-top-72"
+      />
       <section
-      id="animales"
-      class="flex container flex-col gap-5 pt-20 w-full  h-max pb-32"
-    >
-      <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
-        Buscando un nuevo hogar
-      </h2>
-      <Carousel client:visible />
-    </section>
+        id="animales"
+        class="flex container flex-col gap-5 pt-20 w-full h-max pb-32"
+      >
+        <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
+          Buscando un nuevo hogar
+        </h2>
+        <Carousel client:visible />
+      </section>
     </div>
-
   </main>
 </Layout>
 
