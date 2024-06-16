@@ -25,7 +25,7 @@ curl -fsSL https://bun.sh/install | bash
 ```
 
 ### 💥 Clone project 💥 
-> to download from Master branch (possible bugs)
+> to download from main branch
 ```bash
 git clone https://github.com/CristopherVilla20/amigos-con-cola.git
 cd amigos-con-cola
