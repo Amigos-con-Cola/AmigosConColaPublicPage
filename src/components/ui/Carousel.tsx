@@ -1,7 +1,7 @@
 import { Navigation, Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import animales from "../fakedata.json";
+import animales from "../../fakedata.json";
 
 // Import Swiper styles
 import "swiper/css";

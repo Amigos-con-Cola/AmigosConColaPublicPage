@@ -13,6 +13,9 @@
       ],
       "@/lib": [
         "src/lib/*"
+      ],
+      "@/Carousel": [
+        "src/components/ui/Carousel.tsx"
       ]
     },
     "jsx": "react-jsx",

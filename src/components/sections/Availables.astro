@@ -1,0 +1,19 @@
+---
+import Carousel from "../ui/Carousel";
+import Waves3 from "@/assets/shapes/Waves3.astro";
+---
+
+<div class="bg-semibrown relative flex justify-center">
+  <Waves3
+    class="text-semibrown z-10 absolute -top-16 w-full md:-top-40 lg:-top-72"
+  />
+  <section
+    id="animales"
+    class="flex container flex-col gap-5 pt-20 w-full h-max pb-32"
+  >
+    <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
+      Buscando un nuevo hogar
+    </h2>
+    <Carousel client:visible />
+  </section>
+</div>
