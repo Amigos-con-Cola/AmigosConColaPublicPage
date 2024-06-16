@@ -77,8 +77,8 @@ export default () => {
       autoHeight={true}
     >
       {animales.map((animal: Animal) => (
-        <SwiperSlide>
-          <AnimalCard key={animal.id} animal={animal} />
+        <SwiperSlide key={animal.id}>
+          <AnimalCard  animal={animal} />
         </SwiperSlide>
       ))}
     </Swiper>
