@@ -12,7 +12,7 @@
 > [!IMPORTANT]
 > If you don't have Bun installed in your machine, please do this step
 
-This project is build with **Bun**. A JavaScript runtime faster than node-npm.
+This project is built with **Bun**. A JavaScript runtime faster than node-npm.
 
 > To download Bun Windows Version
 ```powershell
@@ -27,8 +27,8 @@ curl -fsSL https://bun.sh/install | bash
 ### 💥 Clone project 💥 
 > to download from main branch
 ```bash
-git clone https://github.com/CristopherVilla20/amigos-con-cola.git
-cd amigos-con-cola
+git clone https://github.com/Amigos-con-Cola/AmigosConColaPublicPage.git
+cd AmigosConColaPublicPage
 ```
 
 ### 🚀 Run project 🚀
@@ -39,15 +39,15 @@ bun run dev
 ## Contributing
 Here you have a guide to contribute:
 
-1.  [_Fork_](https://github.com/CristopherVilla20/amigos-con-cola/fork) the project 
-2. Clone [_fork_](https://github.com/CristopherVilla20/amigos-con-cola/fork)
+1.  [_Fork_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/fork) the project 
+2. Clone [_fork_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/fork)
 ```bash
 git clone <fork URL>
 ```
 3. Add the repository as remote
    
 ```bash
-git remote add upstream https://github.com/CristopherVilla20/amigos-con-cola
+git remote add upstream https://github.com/Amigos-con-Cola/AmigosConColaPublicPage.git
 ```
 4. Create a new branch
 ```bash
@@ -61,7 +61,7 @@ git commit -m 'Add: new feature'
 ```bash
 git push origin NewFeature
 ```
-1. Open [_pull request_](https://github.com/CristopherVilla20/amigos-con-cola/pulls)
+1. Open [_pull request_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/pulls)
 
 ## 🛠️ Stack
 
