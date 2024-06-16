@@ -1,12 +1,14 @@
 ---
-import Blob1 from "../shapes/Blob1.astro";
-import Blob2 from "../shapes/Blob2.astro";
-import Arrow from "../icons/Arrow.astro";
-import Circle2 from "../shapes/Circle2.astro";
-import Circle1 from "../shapes/Circle1.astro";
-import Waves2 from "../shapes/Waves2.astro";
-import Waves3 from "@/shapes/Waves3.astro";
-import Waves1 from "@/shapes/Waves1.astro";
+import Blob1 from "@/assets/shapes/Blob1.astro";
+import Blob2 from "@/assets/shapes/Blob2.astro";
+import Arrow from "@/assets/icons/Arrow.astro";
+import Circle2 from "@/assets/shapes/Circle2.astro";
+import Circle1 from "@/assets/shapes/Circle1.astro";
+import Waves2 from "@/assets/shapes/Waves2.astro";
+import Waves3 from "@/assets/shapes/Waves3.astro";
+import Waves1 from "@/assets/shapes/Waves1.astro";
+import { Image } from "astro:assets";
+import sevallos from "@/assets/images/sevallos.webp";
 ---
 
 <div class="bg-celeste relative flex justify-center px-8">
@@ -15,9 +17,9 @@ import Waves1 from "@/shapes/Waves1.astro";
     id="nosotros"
     class="z-20 pt-28 pb-36 lg:pb-52 container flex justify-center items-center flex-col-reverse md:flex md:flex-row md:gap-24"
   >
-    <img
+    <Image
       class="pt-4 size-52 md:basis-1/3 md:p-0 md:size-72 lg:size-96 z-10"
-      src="/sevallos.webp"
+      src={sevallos}
       alt=""
     />
     <div class="md:basis-1/2 grid grid-cols-2 z-10 text-pretty">
@@ -60,6 +62,8 @@ import Waves1 from "@/shapes/Waves1.astro";
         </div>
       </div>
     </div>
+
+    <!-- TODO: Añadir decoraciones -->
     <!-- <Arrow
       class="size-10 top-96 left-10 md:top-56 md:-rotate-45 md:left-[45%] md:size-12 absolute"
     />
