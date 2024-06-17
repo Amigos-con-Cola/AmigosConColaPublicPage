@@ -1,7 +1,7 @@
 import { Navigation, Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import animales from "../../fakedata.json";
+import { useEffect, useState } from "react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,16 +9,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 export interface Animal {
-  id: number;
-  nombre: string;
-  edad: number;
-  genero: string;
-  imagen: string;
-  estado: boolean;
-  tipo: string;
+  
+    "id": number,
+    "nombre": string,
+    "edad": number,
+    "genero": string,
+    "imagen": string,
+    "adoptado": false,
+    "especie": string,
+    "historia": string,
+    "ubicacion": string,
+    "peso": number,
+    "codigo": string
+  
 }
 
-const AnimalCard = ({ animal }: { animal: Animal }) => {
+const  AnimalCard =  ({ animal }: { animal: Animal }) => {
   return (
     <div className="shadow  pb-5 rounded-[20px] w-64 h-max gap-3 bg-white flex flex-col items-center">
       <img
@@ -29,16 +35,16 @@ const AnimalCard = ({ animal }: { animal: Animal }) => {
       <h2 className="font-['Amatic_SC'] font-bold text-4xl">{animal.nombre}</h2>
       <div className="flex flex-col gap-3 justify-center items-center">
         <div className="flex  gap-20">
-          <p>Gender</p>
-          <p className="text-left">Boy</p>
+          <p>Género</p>
+          <p className="text-left">{animal.genero}</p>
         </div>
         <div className="flex gap-20">
-          <p>Age</p>
-          <p className="text-left">4 years</p>
+          <p>Edad</p>
+          <p className="text-left">{animal.edad} meses</p>
         </div>
         <div className="flex gap-20">
-          <p>Weight</p>
-          <p className="text-left">15 Kg</p>
+          <p>Peso</p>
+          <p className="text-left">{animal.peso}</p>
         </div>
         <button></button>
       </div>
@@ -46,41 +52,71 @@ const AnimalCard = ({ animal }: { animal: Animal }) => {
   );
 };
 
-export default () => {
+export default function Carousel(props: any) {
+  const [animales, setAnimales] = useState<Animal[]>([]);
+  useEffect(() => {
+    const fetchAnimales = async () => {
+      const response = await fetch("http://localhost:5130/api/animals");
+      const data = await response.json();
+      const animales = data.data;
+      setAnimales(animales);
+    };
+    fetchAnimales();
+  }, []);
+
   return (
-    <Swiper
-      className="w-[70%]  pb-14"
-      breakpoints={{
-        350: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      }}
-      loop={true}
-      keyboard={{
-        enabled: true,
-      }}
-      modules={[Navigation, Pagination]}
-      spaceBetween={0}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      centeredSlides={true}
-      autoHeight={true}
-    >
-      {animales.map((animal: Animal) => (
-        <SwiperSlide key={animal.id}>
-          <AnimalCard  animal={animal} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <>
+    <style>
+      
+    </style>
+        {animales.length > 0 ? (
+          <Swiper
+            className="w-[70%]  pb-14"
+            breakpoints={{
+              350: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            loop={true}
+            keyboard={{
+              enabled: true,
+            }}
+            modules={[Navigation, Pagination]}
+            spaceBetween={0}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            centeredSlides={true}
+            autoHeight={true}
+          >
+            {animales.map((animal: Animal) => (
+              <SwiperSlide key={animal.id}>
+                <AnimalCard  animal={animal} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+): (
+<div className="w-full  pt-32 flex-1 flex justify-center">
+{
+  props.dogLoader
+}
+</div>
+  
+  
+
+          )}
+    </>
+    
   );
-};
+  
+} 
+
