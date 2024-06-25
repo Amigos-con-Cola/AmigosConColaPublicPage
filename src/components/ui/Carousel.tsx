@@ -9,22 +9,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 export interface Animal {
-  
-    "id": number,
-    "nombre": string,
-    "edad": number,
-    "genero": string,
-    "imagen": string,
-    "adoptado": false,
-    "especie": string,
-    "historia": string,
-    "ubicacion": string,
-    "peso": number,
-    "codigo": string
-  
+  id: number;
+  nombre: string;
+  edad: number;
+  genero: string;
+  imagen: string;
+  adoptado: false;
+  especie: string;
+  historia: string;
+  ubicacion: string;
+  peso: number;
+  codigo: string;
 }
 
-const  AnimalCard =  ({ animal }: { animal: Animal }) => {
+const AnimalCard = ({ animal }: { animal: Animal }) => {
   return (
     <div className="shadow  pb-5 rounded-[20px] w-64 h-max gap-3 bg-white flex flex-col items-center">
       <img
@@ -33,18 +31,18 @@ const  AnimalCard =  ({ animal }: { animal: Animal }) => {
         alt=""
       />
       <h2 className="font-['Amatic_SC'] font-bold text-4xl">{animal.nombre}</h2>
-      <div className="flex flex-col gap-3 justify-center items-center">
-        <div className="flex  gap-20">
-          <p>Género</p>
-          <p className="text-left">{animal.genero}</p>
+      <div className="flex flex-col gap-3 items-center  px-5 w-full">
+        <div className="flex justify-between w-full">
+          <p className="font-semibold">Género</p>
+          <p>{animal.genero === "Male" ? "Macho" : "Hembra"}</p>
         </div>
-        <div className="flex gap-20">
-          <p>Edad</p>
-          <p className="text-left">{animal.edad} meses</p>
+        <div className="flex justify-between w-full">
+          <p className="font-semibold">Edad</p>
+          <p>{animal.edad} meses</p>
         </div>
-        <div className="flex gap-20">
-          <p>Peso</p>
-          <p className="text-left">{animal.peso}</p>
+        <div className="flex justify-between w-full">
+          <p className="font-semibold">Peso</p>
+          <p>{animal.peso} kilos</p>
         </div>
         <button></button>
       </div>
@@ -66,57 +64,47 @@ export default function Carousel(props: any) {
 
   return (
     <>
-    <style>
-      
-    </style>
-        {animales.length > 0 ? (
-          <Swiper
-            className="w-[70%]  pb-14"
-            breakpoints={{
-              350: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-            }}
-            loop={true}
-            keyboard={{
-              enabled: true,
-            }}
-            modules={[Navigation, Pagination]}
-            spaceBetween={0}
-            slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
-            centeredSlides={true}
-            autoHeight={true}
-          >
-            {animales.map((animal: Animal) => (
-              <SwiperSlide key={animal.id}>
-                <AnimalCard  animal={animal} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-): (
-<div className="w-full  pt-32 flex-1 flex justify-center">
-{
-  props.dogLoader
-}
-</div>
-  
-  
-
-          )}
+      <style></style>
+      {animales.length > 0 ? (
+        <Swiper
+          className="w-[70%]  pb-14"
+          breakpoints={{
+            350: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          loop={true}
+          keyboard={{
+            enabled: true,
+          }}
+          modules={[Navigation, Pagination]}
+          spaceBetween={0}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          centeredSlides={true}
+          autoHeight={true}
+        >
+          {animales.map((animal: Animal) => (
+            <SwiperSlide key={animal.id}>
+              <AnimalCard animal={animal} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <div className="w-full  pt-32 flex-1 flex justify-center">
+          {props.dogLoader}
+        </div>
+      )}
     </>
-    
   );
-  
-} 
-
+}
