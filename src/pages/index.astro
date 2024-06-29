@@ -3,6 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/sections/Header.astro";
 import Nosotros from "../components/sections/Nosotros.astro";
 import Availables from "@/components/sections/Availables.astro";
+import SectionTitle from "@/components/ui/SectionTitle.astro";
+import Waves5 from "@/assets/shapes/Waves5.astro";
+import { Image } from "astro:assets";
+import perrito from "@/assets/images/perrito.png";
+import HelpItem from "@/components/ui/HelpItem.astro";
 ---
 
 <Layout title="Amigos con cola || Consigue un nuevo amigo peludo">
@@ -10,5 +15,46 @@ import Availables from "@/components/sections/Availables.astro";
     <Header />
     <Nosotros />
     <Availables />
+    <section
+      id="como-ayudar"
+      class="relative bg-[#FFEF61] min-h-[1000px] w-full max-container flex flex-col items-center mx-0"
+    >
+      <div class="bg-[#FFE500] w-full">
+        <SectionTitle title="¿Cómo ayudar al refugio?" />
+        <Waves5 class="absolute" />
+      </div>
+      <div
+        class="pt-32 w-full max-w-[1400px] grid grid-cols-10 auto-rows-[25rem] gap-4 mx-4 p-20"
+      >
+        <HelpItem class="col-span-10 md:col-span-6" title="Adopta">
+          <div
+            slot="image"
+            class="transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-500 ease-in-out group-hover:scale-110"
+            style="background-image: url('/adoptar.jpg')"
+          >
+          </div>
+          <p slot="content">Cotenido</p>
+        </HelpItem>
+        <HelpItem class="col-span-10 md:col-span-4" title="Donaciones">
+          <p slot="content">Cotenido</p>
+        </HelpItem>
+        <HelpItem class="col-span-10 md:col-span-4" title="Voluntariado">
+          <div
+            slot="image"
+            class="transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-500 ease-in-out group-hover:scale-110"
+            style="background-image: url('/voluntario.png')"
+          >
+          </div>
+          <p slot="content">Cotenido</p>
+        </HelpItem>
+        <HelpItem class="col-span-10 md:col-span-6" title="Apadrinamiento">
+          <p slot="content">Cotenido</p>
+        </HelpItem>
+      </div>
+    </section>
   </main>
 </Layout>
