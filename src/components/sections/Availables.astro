@@ -1,27 +1,24 @@
 ---
 import Waves1 from "@/assets/shapes/Waves1.astro";
 import Carousel from "../ui/Carousel";
-import Waves3 from "@/assets/shapes/Waves3.astro";
-import Waves4 from "@/assets/shapes/Waves4.astro";
+import Waves4 from "@/assets/shapes/Waves3.astro";
 import DogLoader from "@/components/ui/DogLoader.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
 ---
 
-<div class="bg-semibrown relative flex z-20 justify-center min-h-[1000px]">
-  <Waves3
-    class="text-semibrown z-10 absolute -top-16 w-full md:-top-40 lg:-top-72"
-  />
-  <section
+<section
+  class="z-10 relative bg-semibrown w-full max-container flex flex-col items-center mx-0"
+>
+  <div
     id="animales"
     class="flex container flex-col gap-5 pt-20 w-full h-max pb-32"
   >
-    <h2 class="text-center text-pretty pt-4 text-5xl font-['Bitcheese']">
-      Buscando un nuevo hogar
-    </h2>
+    <SectionTitle title="Buscando un nuevo hogar" />
     <Carousel client:idle>
       <div slot="dogLoader">
         <DogLoader />
       </div>
     </Carousel>
-  </section>
+  </div>
   <Waves4 class="z-10 absolute -bottom-1 w-full" />
-</div>
+</section>

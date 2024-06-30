@@ -1,0 +1,47 @@
+---
+import Waves5 from "@/assets/shapes/Waves4.astro";
+import HelpItem from "../ui/HelpItem.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+---
+
+<section
+  id="como-ayudar"
+  class="relative bg-[#FFEF61] min-h-[1000px] w-full max-container flex flex-col items-center mx-0"
+>
+  <div class="bg-[#FFE500] relative w-full">
+    <SectionTitle title="¿Cómo ayudar al refugio?" />
+    <Waves5 class="absolute" />
+  </div>
+  <div
+    class="mt-16 w-full max-w-[1400px] grid lg:grid-cols-10 auto-rows-[25rem] gap-4 mx-auto p-20 md:p-12"
+  >
+    <HelpItem class="col-span-10 lg:col-span-6" title="Adopta">
+      <div
+        slot="image"
+        class="transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-950
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-500 ease-in-out group-hover:scale-110"
+        style="background-image: url('/adoptar.jpg')"
+      >
+      </div>
+      <p slot="content">Cotenido</p>
+    </HelpItem>
+    <HelpItem class="col-span-10 lg:col-span-4" title="Donaciones">
+      <p slot="content">Cotenido</p>
+    </HelpItem>
+    <HelpItem class="col-span-10 lg:col-span-4" title="Voluntariado">
+      <div
+        slot="image"
+        class="transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-950
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-500 ease-in-out group-hover:scale-110"
+        style="background-image: url('/voluntario.png')"
+      >
+      </div>
+      <p slot="content">Cotenido</p>
+    </HelpItem>
+    <HelpItem class="col-span-10 lg:col-span-6" title="Apadrinamiento">
+      <p slot="content">Cotenido</p>
+    </HelpItem>
+  </div>
+</section>
