@@ -101,9 +101,14 @@ export default function Carousel(props: any) {
           ))}
         </Swiper>
       ) : (
-        <div className="w-full  pt-32 flex-1 flex justify-center">
-          {props.dogLoader}
-        </div>
+        <>
+          <div className="w-full  pt-32 flex-1 flex justify-center">
+            {props.dogLoader}
+          </div>
+          <h2 className="text-center font-Amatic_SC text-2xl">
+            Cargando animales disponibles...
+          </h2>
+        </>
       )}
     </>
   );

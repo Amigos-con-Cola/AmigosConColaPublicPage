@@ -23,11 +23,7 @@ import Waves1 from "@/assets/shapes/Waves1.astro";
       </p>
       <div>
         <a href="#animales">
-          <button
-            type="button"
-            class="mt-5 text-white bg-gradient-to-r from-primary to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-            >Animales disponibles</button
-          >
+          <button type="button">Animales disponibles</button>
         </a>
       </div>
     </div>
@@ -48,3 +44,22 @@ import Waves1 from "@/assets/shapes/Waves1.astro";
   />
   <Waves1 class="absolute bottom-0" />
 </section>
+
+<style>
+  button {
+    margin-top: 1em;
+    padding: 0.6em 1em;
+    border: 4px solid #02b0ef;
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+    color: #02b0ef;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    background-color: #02b0ef;
+    color: white;
+  }
+</style>

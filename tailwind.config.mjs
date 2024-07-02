@@ -19,8 +19,14 @@ export default {
       primary: "#02B0EF",
       semibrown: "#FDF8EC",
       celeste: "#B6EAFF",
+      amarillo: "#FFE500",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        Bitcheese: "Bitcheese",
+        Amatic_SC: "Amatic SC",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };
