@@ -4,13 +4,33 @@ import Header from "../components/sections/Header.astro";
 import Nosotros from "../components/sections/Nosotros.astro";
 import Availables from "@/components/sections/Availables.astro";
 import HowToHelp from "@/components/sections/HowToHelp.astro";
+import Waves1 from "@/assets/shapes/Waves1.astro";
+import Waves2 from "@/assets/shapes/Waves2.astro";
+import Waves4 from "@/assets/shapes/Waves4.astro";
+import SectionTitle from "@/components/ui/SectionTitle.astro";
 ---
 
 <Layout title="Amigos con cola || Consigue un nuevo amigo peludo">
   <main>
-    <Header />
-    <Nosotros />
-    <Availables />
-    <HowToHelp />
+    <section class="bg-semibrown relative">
+      <Header />
+      <Waves1 class="absolute bottom-0" />
+    </section>
+    <section class="bg-celeste relative">
+      <Nosotros />
+      <Waves2 class="bottom-0 absolute" />
+    </section>
+    <section class="bg-semibrown relative ">
+      <Availables />
+      <Waves4 class="absolute -bottom-1 transform -scale-y-[100%] -scale-x-100  m-0" />
+    </section>
+    <section class="bg-[#FFEF61] relative ">
+      <div class="bg-[#FFE500]  w-full">
+        <SectionTitle title="¿Cómo ayudar al refugio?" />
+        <Waves4 class="absolute " />
+      </div>
+      <HowToHelp />
+      
+    </section>
   </main>
 </Layout>
