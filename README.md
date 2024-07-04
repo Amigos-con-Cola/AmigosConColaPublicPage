@@ -4,9 +4,8 @@
   <a href="https://docs.astro.build/en/getting-started/"><kbd> <br> Astro documentation <br> </kbd></a>
 </div><br>
 
+## Installation
 
-
-## Installation 
 ### 🍞 Bun installation 🍞
 
 > [!IMPORTANT]
@@ -15,52 +14,67 @@
 This project is built with **Bun**. A JavaScript runtime faster than node-npm.
 
 > To download Bun Windows Version
+
 ```powershell
 powershell -c "irm bun.sh/install.ps1 | iex"
 ```
 
 > To download Bun Linux & MacOS Version
+
 ```bash
 curl -fsSL https://bun.sh/install | bash
 ```
 
-### 💥 Clone project 💥 
+### 💥 Clone project 💥
+
 > to download from main branch
+
 ```bash
 git clone https://github.com/Amigos-con-Cola/AmigosConColaPublicPage.git
 cd AmigosConColaPublicPage
 ```
 
 ### 🚀 Run project 🚀
+
 ```bash
 bun run dev
 ```
 
 ## Contributing
+
 Here you have a guide to contribute:
 
-1.  [_Fork_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/fork) the project 
-2. Clone [_fork_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/fork)
+1.  [_Fork_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/fork) the project
+2.  Clone [_fork_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/fork)
+
 ```bash
 git clone <fork URL>
 ```
+
 3. Add the repository as remote
-   
+
 ```bash
 git remote add upstream https://github.com/Amigos-con-Cola/AmigosConColaPublicPage.git
 ```
+
 4. Create a new branch
+
 ```bash
 git switch -c NewFeature
 ```
+
 1. Commit your contribution
+
 ```bash
 git commit -m 'Add: new feature'
 ```
+
 1. Push
+
 ```bash
 git push origin NewFeature
 ```
+
 1. Open [_pull request_](https://github.com/Amigos-con-Cola/AmigosConColaPublicPage/pulls)
 
 ## 🛠️ Stack
@@ -69,8 +83,6 @@ git push origin NewFeature
 - [![Bun][bun-badge]][bun-url] - An all-in-one JavaScript runtime & toolkit designed for speed.
 - [![Typescript][typescript-badge]][typescript-url] - JavaScript with syntax for types.
 - [![Tailwind CSS][tailwind-badge]][tailwind-url] - A utility-first CSS framework for rapidly building custom designs.
-
-
 
 [astro-url]: https://astro.build/
 [typescript-url]: https://www.typescriptlang.org/
