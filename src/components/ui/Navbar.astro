@@ -17,7 +17,7 @@ const navItems = [
   },
   {
     title: "Donar",
-    label: "Donar",
+    label: "donar",
     url: "/#donar",
   },
 ];
@@ -41,10 +41,9 @@ const navItems = [
         >Adoptar</button
       >
       <button
-        data-collapse-toggle="navbar-sticky"
         type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-sticky"
+        id="navbar-sticky-button"
         aria-expanded="false"
       >
         <span class="sr-only">Abrir menú principal</span>
@@ -77,6 +76,7 @@ const navItems = [
               href={item.url}
               class="block py-2 px-3 transition text-gray-900 rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0"
               aria-label={item.label}
+              name={item.label}
             >
               {item.title}
             </a>
@@ -86,3 +86,31 @@ const navItems = [
     </div>
   </div>
 </div>
+
+<script>
+  import { Collapse } from "flowbite";
+  const $target = document.getElementById("navbar-sticky");
+  const $triggerEl: HTMLElement | null = document.getElementById(
+    "navbar-sticky-button",
+  );
+  const collapse = new Collapse($target, $triggerEl);
+
+  const $itemNosotros = document.getElementsByName("nosotros")[0];
+  const $itemAnimales = document.getElementsByName("animales")[0];
+  const $itemComoAyudar = document.getElementsByName("como-ayudar")[0];
+  const $itemDonar = document.getElementsByName("donar")[0];
+
+  $itemNosotros?.addEventListener("click", (event) => {
+    console.log("click");
+    collapse.toggle();
+  });
+  $itemAnimales?.addEventListener("click", () => {
+    collapse.toggle();
+  });
+  $itemComoAyudar?.addEventListener("click", () => {
+    collapse.toggle();
+  });
+  $itemDonar?.addEventListener("click", () => {
+    collapse.toggle();
+  });
+</script>
