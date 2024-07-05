@@ -1,0 +1,11 @@
+---
+const props = Astro.props;
+---
+
+<></>
+<button
+  type="button"
+  class=`${Astro.props.class} mb-5 transition-all ease-in-out duration-[0.3s] bg-transparent text-primary font-bold  mt-[1em] px-[1em] py-[0.6em] border-4 border-solid border-[#02b0ef] hover:bg-primary hover:text-white hover:scale-105`
+>
+  {props.content}
+</button>

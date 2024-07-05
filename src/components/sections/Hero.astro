@@ -2,6 +2,7 @@
 import DogHeaderIcon from "@/assets/icons/DogHeaderIcon.astro";
 import PawIcon from "@/assets/icons/PawIcon.astro";
 import Waves1 from "@/assets/shapes/Waves1.astro";
+import MainButton from "../ui/MainButton.astro";
 ---
 
 <section
@@ -21,11 +22,13 @@ import Waves1 from "@/assets/shapes/Waves1.astro";
       </p>
       <div>
         <a href="#animales">
-          <button type="button">Animales disponibles</button>
+          <MainButton content="Animales disponibles" />
         </a>
       </div>
     </div>
-    <DogHeaderIcon class="h-auto max-w-[500] w-[80%] hidden lg:block" />
+    <DogHeaderIcon
+      class="self-end h-auto max-w-[500] w-[80%] hidden lg:block"
+    />
   </div>
 
   <PawIcon
@@ -41,22 +44,3 @@ import Waves1 from "@/assets/shapes/Waves1.astro";
     class="absolute right-28 top-[16rem] size-9 md:top-[48%] md:left-[50%] rotate-[35deg] md:size-24"
   />
 </section>
-
-<style>
-  button {
-    margin-top: 1em;
-    padding: 0.6em 1em;
-    border: 4px solid #02b0ef;
-    transition: ease-in-out 0.3s;
-    background-color: transparent;
-    color: #02b0ef;
-    font-weight: bolder;
-    font-size: 16px;
-  }
-
-  button:hover {
-    transform: scale(1.05);
-    background-color: #02b0ef;
-    color: white;
-  }
-</style>
