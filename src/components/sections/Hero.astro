@@ -9,8 +9,8 @@ import MainButton from "../ui/MainButton.astro";
   id="inicio"
   class="relative pt-20 pb-44 w-full max-container flex flex-col items-center mx-0"
 >
-  <div class="z-20 md:md:flex justify-between items-center">
-    <div class="flex flex-col mx-10 max-h-min items-start md:my-6 md:mx-10">
+  <div class="z-20 md:flex justify-between items-center lg:ml-20">
+    <div class="flex flex-col mx-10 items-start md:my-6">
       <h1 class="text-6xl mt-5 text-pretty md:text-8xl font-['Bitcheese']">
         Encuentra a tu amigo peludo
       </h1>
@@ -26,9 +26,7 @@ import MainButton from "../ui/MainButton.astro";
         </a>
       </div>
     </div>
-    <DogHeaderIcon
-      class="self-end h-auto max-w-[500] w-[80%] hidden lg:block"
-    />
+    <DogHeaderIcon class="h-auto basis-5/6 hidden lg:inline" />
   </div>
 
   <PawIcon
