@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import FormAdoption from "@/components/ui/FormAdoption.vue";
+---
+
+<Layout title="Adoptar">
+  <FormAdoption client:idle />
+</Layout>
+
+<style>
+  option[disabled] {
+    display: none;
+    color: gray;
+  }
+</style>
