@@ -36,9 +36,7 @@ const nextStep = async (values: any) => {
 };
 </script>
 <template>
-  <main
-    class="mt-10 min-h-screen pb-[100px] flex flex-col items-center bg-semibrown"
-  >
+  <main class="mt-10 min-h-screen pb-5 flex flex-col items-center">
     <h1
       class="text-6xl font-bold font-Bitcheese w-full border-b-2 text-center py-10 bg-primary"
     >
