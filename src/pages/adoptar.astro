@@ -10,7 +10,14 @@ import FormAdoption from "@/components/ui/FormAdoption.vue";
     >
     </div>
   </div>
-  <FormAdoption client:idle />
+  <main class="mt-10 min-h-screen pb-5 flex flex-col items-center">
+    <h1
+      class="text-6xl font-bold font-Bitcheese w-full border-b-2 text-center py-10 bg-primary mb-10"
+    >
+      Formulario de solicitud de adopción
+    </h1>
+    <FormAdoption client:idle />
+  </main>
 </Layout>
 
 <style>
