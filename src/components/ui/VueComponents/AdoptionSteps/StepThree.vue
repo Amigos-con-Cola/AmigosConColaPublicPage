@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import FormInput from "@/components/ui/FormInput.vue";
-import FormSelect from "@/components/ui/FormSelect.vue";
-import FormRadio from "../FormRadio.vue";
+import FormInput from "@/components/ui/VueComponents/common/FormInput.vue";
+import FormSelect from "@/components/ui/VueComponents/common/FormSelect.vue";
+import FormRadio from "../common/FormRadio.vue";
 
 const reasonOptions = [
   { value: "adopcion", label: "Adopción" },

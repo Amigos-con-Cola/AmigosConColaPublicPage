@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import FormInput from "@/components/ui/FormInput.vue";
-import FormSelect from "@/components/ui/FormSelect.vue";
+import FormInput from "@/components/ui/VueComponents/common/FormInput.vue";
+import FormSelect from "@/components/ui/VueComponents/common/FormSelect.vue";
 
 const selectOptions = [
   { value: "soltero", label: "Soltero" },
@@ -12,59 +12,59 @@ const selectOptions = [
 
 <template>
   <FormInput
-    placeholder="Fernando"
-    type="text"
     label="Primer nombre"
     name="name"
+    placeholder="Fernando"
+    type="text"
   />
   <FormInput
-    placeholder="Zambrano"
-    type="text"
     label="Primer apellido"
     name="lastname"
+    placeholder="Zambrano"
+    type="text"
   />
   <FormInput
-    placeholder="ejemplo@hotmail.com"
-    type="email"
     label="Correo electrónico"
     name="email"
+    placeholder="ejemplo@hotmail.com"
+    type="email"
   />
-  <FormInput type="date" label="Fecha de nacimiento" name="birthdate" />
+  <FormInput label="Fecha de nacimiento" name="birthdate" type="date" />
 
   <FormSelect
+    :options="selectOptions"
     label="Estado civíl"
     name="civil_status"
-    :options="selectOptions"
     placeholder="Selecciona tu estado civíl"
   />
   <FormInput
-    type="tel"
-    pattern="[0-9]*"
     label="Número de cédula/pasaporte"
     name="id"
+    pattern="[0-9]*"
+    type="tel"
   />
   <FormInput
-    type="tel"
-    pattern="[0-9]*"
     label="Número de celular"
     name="cellphone"
+    pattern="[0-9]*"
+    type="tel"
   />
   <FormInput
-    type="tel"
-    pattern="[0-9]*"
     label="Número de teléfono fijo"
     name="phone"
+    pattern="[0-9]*"
+    type="tel"
   />
   <FormInput
-    placeholder="Zona Mz Villa"
-    type="text"
     label="Dirección de domicilio"
     name="address"
+    placeholder="Zona Mz Villa"
+    type="text"
   />
   <FormInput
-    type="text"
-    placeholder="@fercho123"
     label="Instagram, Facebook, Tiktok y demás redes sociales que utilices"
     name="social"
+    placeholder="@fercho123"
+    type="text"
   />
 </template>
