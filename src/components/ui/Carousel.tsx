@@ -59,7 +59,7 @@ export default function Carousel(props: any) {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: import.meta.env.PUBLIC_API_KEY,
+            Authorization: import.meta.env.API_KEY,
           },
         },
       );
