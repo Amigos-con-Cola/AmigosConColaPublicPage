@@ -1,6 +1,6 @@
+import { useEffect, useState } from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useEffect, useState } from "react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -65,7 +65,6 @@ export default function Carousel(props: any) {
       );
 
       const data = await response.json();
-      console.log(data);
       const animales = data.data;
       setAnimales(animales);
     };
