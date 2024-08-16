@@ -1,14 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Hero from "../components/sections/Hero.astro";
-import Nosotros from "../components/sections/Nosotros.astro";
-import Availables from "@/components/sections/Availables.astro";
-import HowToHelp from "@/components/sections/HowToHelp.astro";
 import Waves1 from "@/assets/shapes/Waves1.astro";
 import Waves2 from "@/assets/shapes/Waves2.astro";
 import Waves4 from "@/assets/shapes/Waves4.astro";
-import SectionTitle from "@/components/ui/SectionTitle.astro";
+import Waves5 from "@/assets/shapes/Waves5.astro";
+import Availables from "@/components/sections/Availables.astro";
+import Footer from "@/components/sections/Footer.astro";
+import HowToHelp from "@/components/sections/HowToHelp.astro";
 import Navbar from "@/components/ui/Navbar.astro";
+import SectionTitle from "@/components/ui/SectionTitle.astro";
+import Hero from "../components/sections/Hero.astro";
+import Nosotros from "../components/sections/Nosotros.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
@@ -39,6 +41,10 @@ import Navbar from "@/components/ui/Navbar.astro";
         <Waves4 class="absolute" />
       </div>
       <HowToHelp />
+      <Waves5 class="absolute bottom-0" />
+    </section>
+    <section class="bg-semibrown">
+      <Footer />
     </section>
   </main>
 </Layout>
