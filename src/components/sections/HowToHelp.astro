@@ -18,10 +18,16 @@ import HelpItem from "../ui/HelpItem.astro";
         style="background-image: url('/adoptar.jpg')"
       >
       </div>
-      <p slot="content">Cotenido</p>
     </HelpItem>
     <HelpItem class="col-span-10 lg:col-span-4" title="Donaciones">
-      <p slot="content">Cotenido</p>
+      <div
+        slot="image"
+        class="transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-950
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-500 ease-in-out group-hover:scale-110"
+        style="background-image: url('/donations.webp')"
+      >
+      </div>
     </HelpItem>
     <HelpItem class="col-span-10 lg:col-span-4" title="Voluntariado">
       <div
@@ -32,10 +38,15 @@ import HelpItem from "../ui/HelpItem.astro";
         style="background-image: url('/voluntario.png')"
       >
       </div>
-      <p slot="content">Cotenido</p>
     </HelpItem>
     <HelpItem class="col-span-10 lg:col-span-6" title="Apadrinamiento">
-      <p slot="content">Cotenido</p>
+      <div
+        slot="image"
+        class="transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-950
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-500 ease-in-out group-hover:scale-110"
+        style="background-image: url('/apadrinamiento.webp')"
+      ></div>
     </HelpItem>
   </div>
 </section>
